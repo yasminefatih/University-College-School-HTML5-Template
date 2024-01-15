@@ -1,0 +1,165 @@
+*{
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    /*--second-color:;
+     --box-shadow: 2px 2px 18px rgb(14 52 54 / 15%);
+     */
+     --main-color:#806cff;
+     --text-color:#555555 ;
+     --bg-color:#fff;
+ }
+ .cont{
+    display:inline-block;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    background: var(--bg-color);
+    margin-top: 65px;
+    border-radius: 10px;
+}
+body{
+    background: var(--main-color);
+}
+
+.Plogin{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   
+   
+}
+.images{
+    flex: 1.3; 
+}
+.images img{
+    width:100%;
+    height: 100%;
+    background-size: cover;
+       
+}
+.pages-login{ 
+    flex: 1;
+    padding: 35px 0 30px 35px;
+}
+.pages-login .title-login{
+    position: relative;
+    top: 0;
+    font-size: 500;
+    font-size: 26px;
+}
+.pages-login .title-login:before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    left: 0;
+    bottom: 0;
+    background: var(--main-color);
+}
+.pages-login .Allbox{
+    margin-top: 35px;
+}
+.pages-login .Allbox .input-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    position: relative;
+}
+.pages-login .Allbox .input-box input{
+    width:80%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 17px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.pages-login .Allbox .input-box input:focus{
+      border-color: var(--main-color);
+}
+  .input-box i{
+   position: absolute;
+   color: var(--main-color);
+   font-size: 17px;
+}
+.Btn-Login{
+    margin-left:15px;
+    margin-top: 30px;
+    display: inline-block;
+}
+.Plogin-btn{
+    padding: 10px 100px; 
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+    outline: none; 
+}
+.lien-password a{
+    margin: 15px 0;
+    color: var(--main-color);
+}
+.lien-password a:hover{
+    color:#5b13b9;
+}
+.any-account a{
+    color: var(--main-color);
+}
+.any-account p{
+  color: var(--text-color);
+  font-size: 15px;
+}
+  
+.any-account a:hover{
+    color:#5b13b9;
+    text-decoration: underline;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 478px) {
+    .cont{
+     
+        width: 85%;
+    
+    }
+    .images    {
+        display: none;
+    }
+    .Plogin{
+        width: 100%;
+    }
+    .pages-login .Allbox .input-box{
+       
+        width: 90%;
+        height: 50px;
+        margin:  0;
+      
+    }
+    .pages-login .Allbox .input-box {
+       margin: 0 5px;
+    }
+    .Plogin-btn{
+        padding: 10px 40px; 
+    }
+    .pages-login{ 
+        padding: 10px;
+    }
+    form{
+        width: 100%;
+    }
+}
